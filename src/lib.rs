@@ -14,6 +14,7 @@ pub fn delay_us(duration_us: u16) {
     }
 }
 
+/// Makes a delay lasting the specified duration (in miliseconds).
 pub fn delay_ms(duration_ms: u16) {
     for _ in 0..duration_ms {
         delay_us(1000);
