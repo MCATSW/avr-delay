@@ -6,5 +6,5 @@ A basic AVR rust delay implementation.
 
 ## Usage
 
-This crate has rust docs. Generate them with `$ cargo doc --target <LOCAL TARGET>`.
+This crate has rust docs. Generate them with `$ cargo doc -r`.
 
