@@ -22,7 +22,7 @@ pub fn delay_us(duration_us: u16) {
     let cycles: u16 = (duration_us as f32 * CONVERTOR + 0.5) as u16;
     unsafe {
         asm!(
-            // 2 TICKS TOTAL
+            // 4 TICKS TOTAL
             "1: sbiw {counter}, 1", // 2 TICKS
             "brne 1b", // 1/2 TICKS
             counter = inout(reg_iw) cycles => _,
