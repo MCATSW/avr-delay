@@ -3,6 +3,9 @@ name = "avr-delay"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+fcpu-16mhz = []
+
 [dependencies]
 
 [profile.release]
